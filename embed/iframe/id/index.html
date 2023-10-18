@@ -17,11 +17,10 @@ function getParameterByName(name) {
 	results = regex.exec(location.search);
 	return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
+
 var getURL = getParameterByName('get');
-var getIMG = getParameterByName('img');
-var getKEY  = getParameterByName('key');
-var getKEY2  = getParameterByName('key2');
-if (getURL == "#") {alert('Vuelve a la página anterior');}
+if (getURL == "#") {alert('Vuelve a la pÃ¡gina anterior');}
+var getLang = getParameterByName('lang');
 </script>
 <div id="player"></div>
 <script>
